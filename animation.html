@@ -42,9 +42,12 @@
 			margin: 15px 10px;
 			text-align: center;
 			border: 2px solid red;
+			cursor: pointer;
+			position: relative;
 			animation-name: out;
 			animation-duration: 3s;
-			animation-iteration-count: 10;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
 		}
 		@keyframes Taha-code{
 			0%{
@@ -56,18 +59,21 @@
 			25%{
 				background-color: #1c9599;
 				color: orange;
+				font-family: cursive;
 				top: 0px;
 				left: 200px;
 			}
 			55%{
 				background-color: #309920;
 				color: red;
+				font-family: fantasy;
 				top: 200px;
 				left: 200px;
 			}
 			80%{
 				background-color: #662200;
 				color: purple;
+				font-family: monospace;
 				top: 200px;
 				left: 0px;
 			}
@@ -84,6 +90,39 @@
 			}
 			to{
 				background-color: grey;
+			}
+		}
+		@keyframes out{
+			0%{
+				background-color: lightgreen;
+				top: 0px;
+				left: 0px;
+			}
+			25%{
+				background-color: green;
+				font-family: sans-serif;
+				top: 0px;
+				left: 200px;
+			}
+			55%{
+				background-color: grey;
+				color: white;
+				top: 200px;
+				left: 200px;
+			}
+			75%{
+				background-color: black;
+				color: red;
+				font-family: cursive;
+				bottom: 200px;
+				left: 0px;
+			}
+			90%{
+				background-color: white;
+				color: lightblue;
+				font-family: fantasy;
+				bottom: 200px;
+				top: 0px;
 			}
 		}
 	</style>
